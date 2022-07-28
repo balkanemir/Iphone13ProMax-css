@@ -1,0 +1,467 @@
+body {
+    background: rgb(251, 251, 253);
+    margin-left: 532px;
+    margin-top: 190px;
+}
+
+.container {
+    position: absolute;
+    width: 344px;
+    height: 700px;
+    border-radius: 50px;
+}
+
+.camera-frame {
+    position: absolute;
+    width: 170px;
+    height: 177px;
+    border: 1px 1px 1px 1px rgb(155, 167, 155);
+    border-radius: 50px;
+    margin-left: 33px;
+    margin-top: 20px;
+    overflow: hidden;
+    background: rgb(40, 64, 42);
+    box-shadow: rgba(49, 50, 41, 0.8) 4px -2px 8px 1px, rgba(155, 167, 155, 0.8) 0px 0px 2px 2px,  rgb(82, 96, 79, 0.8) -2px 0px 2px 4px;
+}
+
+.camera-frame::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgb(40, 64, 42);
+}
+
+.camera-frame::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 64px;
+    width: 250px;
+    height: 250px;
+    transform: rotate(-20deg);
+    background: linear-gradient(20deg, rgb(88, 100, 88) 30%, rgb(155, 167, 155), rgb(144, 156, 144), rgb(144, 156, 144));
+    transition: 0.5s;
+}
+
+.camera-in {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    border: 1px solid black;
+    border-radius: 100%;
+    
+}
+
+.camera-out {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.small-camera {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.microphone {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border: 0.2px solid rgb(83, 97, 79);
+    border-radius: 100%;
+    margin-top: 153px;
+    margin-left: 185px;
+    background: black;
+    box-shadow: 0.25px 0.25px 0.25px 0.25px rgb(155, 167, 155), -0.25px 0.25px 0.25px 0.15px rgb(155, 167, 155);
+}
+
+.lock-button {
+    position: absolute;
+    width: 2px;
+    height: 86px;
+    margin-top: 212px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    margin-left: 11px;
+    background: rgb(153, 165, 153);
+}
+
+.silent-button {
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    border: 1px solid rgb(142, 149, 142);
+    margin-top: 143px;
+    margin-left: 360px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    background: rgb(183, 197, 184);
+    border-top-width: 4px;
+    border-top-color: rgb(92, 99, 92);
+    border-bottom-width: 4px;
+    border-bottom-color: rgb(92, 99, 92);
+}
+
+.voice-button {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    margin-left: 361px;
+    border: 0px solid rgb(142, 149, 142);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background: rgb(140, 147, 140);
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-top-color: rgb(92, 99, 92);
+    border-bottom-color: rgb(92, 99, 92);
+}
+
+.nick {
+    position: absolute;
+    background: rgb(83, 97, 79);
+}
+
+.lens {
+    position: absolute;
+    border-radius: 100%;
+}
+
+#camera-1 {
+    width: 62px;
+    height: 62px;
+    margin-left: 45px;
+    margin-top: 33px;
+    overflow: hidden;
+    border: 1px solid rgb(82, 96, 79);
+}
+
+#camera-1::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height:100px;
+    left: 3px;
+    transform: rotate(-20deg);
+    background: rgb(16, 14, 15);
+}
+
+#camera-1::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 12px;
+    width: 100px;
+    height: 30px;
+    transform: rotate(250deg);
+    background: linear-gradient(to right,rgb(46, 46, 46) 30%, rgb(105, 105, 105));
+    transition: 0.5s;
+}
+
+#camera-2 {
+    margin-left: 127px;
+    margin-top: 76px;
+    background: linear-gradient(20deg, rgb(33, 31, 32) 30%, rgb(100, 95, 97));
+    border: 1.5px solid black; 
+    width: 61px;
+    height: 61px;
+}
+
+#camera-3 {
+    margin-left: 45px;
+    margin-top: 120px;
+    border: 1px solid rgb(82, 96, 79);
+    background: rgb(5, 5, 5);
+}
+
+#camera-1-out {
+    margin-left: 40px;
+    margin-top: 27px;
+    border: 1px solid rgb(58, 70, 58);
+    background: linear-gradient(70deg, rgb(15, 36, 21) 58%, rgb(198, 210, 198),rgb(198, 210, 198));
+    box-shadow: -0.5px 2px 2px 1px rgb(13, 34, 15);
+}
+
+#camera-2-out {
+    margin-left: 121px;
+    margin-top: 70px;
+    background: linear-gradient(50deg,rgb(52, 72, 60) 10%, rgb(132, 153, 136) 40%, rgb(215, 227, 215));
+    box-shadow: -1px 3px 2px 1px rgba(40, 64, 42, 0.504);
+    border: 1px solid rgb(82, 96, 79);
+    width: 74px;
+    height: 74px;
+}
+
+#camera-3-out {
+    width: 74px;
+    height: 74px;
+    margin-left: 40px;
+    margin-top: 115px;
+    border: 0.5px solid rgb(94, 112, 96);
+    background: linear-gradient(70deg,rgb(31, 47, 34) 50%, rgb(38, 58, 47));
+    box-shadow: 0px 1px 1px 1px rgb(5, 30, 9);
+}
+
+#small-camera-1 {
+    margin-left: 146px;
+    margin-top: 32px;
+    border: 1px solid  rgb(155, 167, 155);
+    background: radial-gradient(closest-side, rgb(255, 248, 241),rgb(246, 218, 194),rgb(255, 248, 241));
+    box-shadow: -1px 1px 2px 2px rgba(82, 96, 79, 0.396), inset -0.5px -0.5px 3px 1px rgb(155, 167, 155);
+}
+
+#small-camera-2 {
+    width: 26px;
+    height: 26px;
+    margin-left: 145px;
+    margin-top: 157px;
+    border: 1px solid rgb(40, 40, 40);
+    background: rgb(40, 40, 40);
+}
+
+#container-out {
+    margin-left: 13px;
+    width: 346px;
+    border: 1px outset rgb(82, 96, 79);
+    box-shadow: 0.7px 0.7px 0.7px 0.7px rgb(82, 96, 79) inset;
+    background-color: rgb(189, 201, 191);
+}
+
+#container-in {
+    width: 340px;
+    margin-top: 3px;
+    margin-left: 16px;
+    margin-right: 3px;
+    background: linear-gradient(25deg, rgb(49, 50, 41), rgb(82, 96, 79),rgb(82, 96, 79),rgb(83, 97, 79),rgb(90, 106, 89), rgb(97, 113, 96), #98A996 , #AEBFAC);
+    border: 1px outset black;
+    box-shadow: black 0.7px 0.7px 0.7px 0.7px inset, rgba(0, 0, 0, 0.5) 0.7px 0.7px 0.7px 0.7px inset, rgb(90, 106, 89) 0.7px 0.7px 0.7px 0.7px;
+}
+
+#camera-frame-out {
+    position: absolute;
+    width: 170px;
+    height: 177px;
+    border-radius: 50px;
+    margin-left: 33px;
+    margin-top: 20px;
+    margin-left: 28px;
+    margin-top: 16px;
+    width: 180px;
+    height: 186px;
+    box-shadow: -2px -2px 0px 0px rgba(82, 96, 79, 0.8), 0px 3px 2px 2px rgb(82, 96, 79, 0.8);
+}
+
+#voice-button-1 {
+    margin-top: 194px;
+}
+
+#voice-button-2 {
+    margin-top: 262px;
+}
+
+#image-container {
+    position: absolute;
+    margin-left: 149px;
+    margin-top: 295px;
+    width: 80px;
+    height: 100px;
+}
+
+#image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#nick-1 {
+    width: 3px;
+    height: 5px;
+    margin-top: 70px;
+    margin-left: 14px;
+}
+
+#nick-2 {
+    width: 3px;
+    height: 5px;
+    margin-top: 70px;
+    margin-left: 358px;
+}
+
+#nick-3 {
+    width: 5px;
+    height: 3px;
+    margin-top: 1px;
+    margin-left: 82px;
+}
+
+#lock-button-shadow-1 {
+    position: absolute;
+    width: 2.5px;
+    height: 5px;
+    background: linear-gradient(to top, rgb(47, 54, 47),rgb(85, 92, 85) ,rgb(125, 132, 125) 50%);
+    margin-left: 12px;
+    margin-top: 212px;
+    border-top-left-radius: 2px;
+}
+
+#lock-button-shadow-2 {
+    position: absolute;
+    width: 2.5px;
+    height: 4px;
+    background: linear-gradient(to bottom, rgb(47, 54, 47),rgb(85, 92, 85) ,rgb(125, 132, 125));
+    margin-left: 11.5px;
+    margin-top: 294px;
+    border-top-left-radius: 0.5px;
+}
+
+#lens-1 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    margin-top: 52px;
+    margin-left: 65px;
+    border: 1px solid rgb(18, 21, 26);
+    background: rgb(18, 21, 26);
+}
+
+#lens-1-in {
+    position: absolute;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    margin-left: 70px;
+    margin-top: 57px;
+    border: 1px solid black;
+    background: linear-gradient(to right, rgb(128, 122, 142) 12%,rgb(5, 4, 2),rgb(5, 4, 2),rgb(2, 38, 96),rgb(74, 110, 144) 90%);
+}
+
+#lens-1-white-point-1 {
+    position: absolute;
+    border-radius: 100%;
+    width: 2px;
+    height: 2px;
+    background: linear-gradient(to top, rgb(72, 61, 91),rgb(160, 149, 179));
+    margin-left: 74px;
+    margin-top: 62px;
+}
+
+#lens-1-white-point-2 {
+    position: absolute;
+    border-radius: 100%;
+    width: 2px;
+    height: 3px;
+    background: linear-gradient(to top, rgb(81, 103, 142), rgb(214, 241, 255), rgb(147, 187, 212));
+    margin-left: 80px;
+    margin-top: 66px;
+}
+
+#lens-2 {
+    width: 43px;
+    height: 43px;
+    margin-left: 137px;
+    margin-top: 87px;
+    background: linear-gradient(30deg, rgb(39, 49, 61) 50%, rgb(100, 95, 97));
+}
+
+#lens-2-in {
+    position: absolute;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-left: 149px;
+    margin-top: 98px;
+    background: linear-gradient(to left,rgb(124, 149, 167) 7%,rgb(44, 77, 128) 7%,rgb(17, 81, 119),rgb(44, 77, 128) 10%,rgb(25, 35, 39),rgb(25, 35, 39),rgb(124, 149, 167)) ;
+}
+
+#lens-2-white-point-1 {
+    position: absolute;
+    border-radius: 100%;
+    width: 2px;
+    height: 2px;
+    background: rgb(173, 226, 255);
+    margin-left: 161px;
+    margin-top: 110px;
+}
+
+#lens-2-white-point-2 {
+    position: absolute;
+    border-radius: 100%;
+    width: 2px;
+    height: 2px;
+    background: rgb(110, 149, 208);
+    margin-left: 156px;
+    margin-top: 107px;
+}
+
+#lens-3 {
+    width: 32px;
+    height: 32px;
+    margin-left: 62px;
+    margin-top: 136px;
+    background: linear-gradient(to top, rgb(14, 18, 21), rgb(22, 26, 38));
+}
+
+#lens-3-in {
+    position: absolute;
+    border-radius: 100%;
+    width: 19px;
+    height: 19px;
+    margin-left: 68px;
+    margin-top: 142px;
+    background: linear-gradient(to left,rgb(76, 93, 173) 7%,rgb(76, 93, 173) 7%,rgb(76, 93, 173),rgb(83, 83, 143) 10%,rgb(3, 0, 5),rgb(29, 33, 42),rgb(87, 144, 125)) ;
+}
+
+#lens-3-white-point-1 {
+    position: absolute;
+    border-radius: 100%;
+    width: 2px;
+    height: 2px;
+    background: rgb(124, 209, 227);
+    margin-left: 73px;
+    margin-top: 146px;
+}
+
+#lens-3-white-point-2 {
+    position: absolute;
+    border-radius: 100%;
+    width: 3px;
+    height: 3px;
+    background: linear-gradient(to right, rgb(64, 47, 101), rgb(207, 195, 197), rgb(136, 143, 195));
+    margin-left: 82px;
+    margin-top: 152px;
+}
+
+#camera-3-in-extra-border {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    margin-left: 47px;
+    margin-top: 122px;
+    border: 1.5px solid rgb(44, 42, 45);
+}
+
+#camera-1-in-extra-border {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    margin-left: 46px;
+    margin-top: 34px;
+    border: 2px solid rgb(44, 42, 45);
+}
+
+#glass-effect {
+    position: absolute;
+    width: 7px;
+    height: 110px;
+    margin-top: 45px;
+    margin-left: 37px;
+    border-top-left-radius: 400px;
+    background: linear-gradient(to right,rgb(44, 68, 46), rgb(56, 80, 58),rgb(40, 64, 42)) ;
+}
